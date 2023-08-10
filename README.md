@@ -30,3 +30,4 @@ Relaciones:
 - Una transacción está asociada a 1 paciente.
 - Una transacción está asociada a 1 medicamento.
 
+**Las siglas "PK" y "FK" significan "Primary Key" y "Foreign Key" respectivamente. Estas claves son esenciales para establecer y mantener las relaciones entre las tablas.**

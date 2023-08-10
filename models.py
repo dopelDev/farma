@@ -1,4 +1,5 @@
-from sqlalchemy import create_engine, Column, Integer, String, Float, ForeignKey
+from sqlalchemy import create_engine, Column, ForeignKey
+from sqlalchemy.types import Integer, String
 from sqlalchemy.orm import relationship, Session
 from sqlalchemy.ext.declarative import declarative_base
 
@@ -35,3 +36,5 @@ class Transaccion(Base):
     paciente = relationship('Paciente', back_populates='transacciones')
     medicamento = relationship('Medicamento', back_populates='transacciones')
 
+# create engine
+engine = create_engine('sqlite:///farmacia.db', echo=True)
